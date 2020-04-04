@@ -184,6 +184,20 @@ h6, .h6 {
   font-size: 1rem;
 }
 
+.card {
+  position: relative;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 0.25rem;
+}
+
+.card-title {
+  margin-bottom: 0;
+}
+
 header {
   height: 93px;
   box-sizing: border-box;
