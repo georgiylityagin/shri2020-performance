@@ -1,28 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  $('.card').each(function(e) {
-      if ($(this).hasClass('card_size_s')) {
-          $(this).css({'border-radius': '22px'})
-      } else {
-          $(this).css({'border-radius': '23px'})
-      }
-  });
-  var waterContainer = document.querySelector('.card.card_size_s:last-child');
-
-  waterContainer.innerHTML = 
-              '<div class="card-heading">' +
-                  '<div class="card-icon-wrap">' +
-                      '<img class="card-icon" src="img/kettle.svg">' +
-                  '</div>' +
-                  '<h3 class="card-title">Вода вскипела</h3>' +
-             ' </div>' +
-              '<div class="card-specs">' +
-                  '<p class="card-source">Чайник</p>' +
-                  '<p class="card-time card-time_block">16:20, Сегодня</p>' +
-              '</div>'
-
-});
-
-document.addEventListener("DOMContentLoaded", function () {
   const buttonsContainer = document.querySelector(".buttons-wrap");
   const fridgeInfoContainer = document.querySelector(".card_size_m:nth-child(8) .card-description");
   setTimeout(function () {
