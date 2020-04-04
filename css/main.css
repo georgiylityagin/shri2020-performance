@@ -184,6 +184,10 @@ h6, .h6 {
   font-size: 1rem;
 }
 
+.purchase-list__item + .purchase-list__item {
+  margin-top: 10px;
+}
+
 .card {
   position: relative;
   flex-direction: column;
@@ -203,6 +207,28 @@ header {
   box-sizing: border-box;
   padding: 0 40px;
   border-bottom: 1px solid #f0f0f0
+}
+
+.purchase-list {
+  padding: 0 40px;
+}
+
+.purchase-list-wrap .card-description {
+  padding-bottom: 12px;
+}
+
+.purchase-list__item {
+  font-size: 20px;
+  position: relative;
+}
+
+.purchase-list__item::before {
+    content: '';
+    position: absolute;
+    left: -24px;
+    width: 20px;
+    height: 20px;
+    background: url("../img/checked.svg");
 }
 
 /* ============================================ */
