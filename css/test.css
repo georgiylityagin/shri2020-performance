@@ -1,7 +1,7 @@
-/* [touch-action=none] {
+[touch-action=none] {
   -ms-touch-action: none;
   touch-action: none
-} */
+}
 
 :root {
   --blue: #007bff;
