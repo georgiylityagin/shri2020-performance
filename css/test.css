@@ -266,7 +266,7 @@ header {
   background: url(../img/checked.svg)
 }
 
-/* a,
+a,
 abbr,
 acronym,
 address,
@@ -352,7 +352,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline
-} */
+}
 
 article,
 aside,
@@ -702,7 +702,7 @@ footer {
   padding: 0
 }
 
-.logo__ya {
+/* .logo__ya {
   display: block;
   position: absolute;
   z-index: 10;
@@ -857,7 +857,7 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap
-}
+} */
 
 @keyframes modal {
   from {
