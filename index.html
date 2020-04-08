@@ -9,7 +9,7 @@
   <link rel="preload" href="./css/main.min.css" as="style">
   <link rel="stylesheet" href="./css/main.min.css">
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon-min.png">
-  <script src="./js/main.min.js"></script>
+  <!-- <script src="./js/main.min.js"></script> -->
 </head>
 
 <body>
@@ -154,22 +154,30 @@
             </div>
           </div>
         </div>
-        <div class="card card_size_m" style="border-radius: 23px;">
+        <div class="card card_size_m" style="border-radius:23px">
           <div class="card-heading">
-            <div class="card-icon-wrap">
-              <img class="card-icon" src="img/fridge.svg">
-            </div>
-            <h3 class="card-title">Заканчивается молоко</h3>
+          <div class="card-icon-wrap">
+          <img class="card-icon" loading="lazy" src="img/fridge.svg">
+          </div>
+          <h3 class="card-title">Заканчивается молоко</h3>
           </div>
           <div class="card-specs">
-            <p class="card-source">Холодильник</p>
-            <p class="card-time">17:23, Сегодня</p>
+          <p class="card-source">Холодильник</p>
+          <p class="card-time">17:23, Сегодня</p>
           </div>
-          <p class="card-description card-description_big description_critical">Кажется, в холодильнике заканчивается
-            молоко. Вы хотите добавить его в список покупок?</p>
-          <div class="buttons-wrap"><button class="button button_yellow" type="button">Да</button><button
-              class="button">Нет</button></div>
-        </div>
+          <input type="checkbox" id="check">
+          <p class="card-description card-description_big description_critical">Кажется, в холодильнике заканчивается молоко. Вы хотите добавить его в список покупок?</p>
+          <div class="purchase-list-wrap">
+          <p class="card-description card-description_big description_critical">Список покупок:</p>
+          <ol class="purchase-list">
+          <li class="purchase-list__item">Хлеб</li>
+          <li class="purchase-list__item">Молоко</li>
+          </ol>
+          </div>
+          <div class="buttons-wrap">
+          <button class="button button_yellow" type="button"><label for="check">Да</label></button><button class="button">Нет</button>
+          </div>
+          </div>
         <div class="card card_size_s" style="border-radius: 22px;">
           <div class="card-heading">
             <div class="card-icon-wrap">
@@ -213,9 +221,7 @@
           <p class="card-description card-description_big description_critical">Робопылесос не смог сменить свое
             местоположение в течение последних 3 минут. Похоже, ему нужна помощь.
           </p>
-          <!-- <div class="critical-cam"></div> -->
           <div data-src="img/cam_test.jpg" class="critical-cam"></div>
-          <!-- <img src="img/cam_test.jpg" class="critical-cam"> -->
           <p></p>
         </div>
         <div class="card card_size_s" style="border-radius: 22px;">
